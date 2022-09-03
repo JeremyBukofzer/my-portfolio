@@ -1,7 +1,44 @@
 :root {
    --light-blue: rgb(163, 190, 199);
+   --nav-bar: rgb(22, 104, 167)
 }
 
-* {
-    background: var(--light-blue)
+body {
+    background-color: var(--light-blue);
+}
+
+header {
+    padding: 20px;
+    background: var(--nav-bar);
+    color:white;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+nav {
+    float: right;
+}
+
+a {
+
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+
+img {
+    float: right;
+    max-height: 100px;
+    max-width: 100px;
 }
