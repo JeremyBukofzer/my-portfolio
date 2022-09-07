@@ -1,9 +1,15 @@
 :root {
    --light-blue: rgb(163, 190, 199);
-   --nav-bar: rgb(22, 104, 167);
+   --nav-bar: rgb(11, 68, 111);
    --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    --text-color: white;
    --section-font: 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -60,12 +66,47 @@ main h2 {
 }
 
 .pantry {
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 .calculator, .taco {
-    max-width: 50%;
+    max-width: 40%;
     margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.contact {
+    width: 70%;
+    background-color: var(--nav-bar);
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+    max-width: 750px;
+    margin: 25px;
+ 
+}
+
+.contact-input {
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    width: 100%;
+    padding:10px;
+    outline: 0;
+    border: 2px solid var(--light-blue);
+    border-radius: 6px;
+    background: transparent;
 }

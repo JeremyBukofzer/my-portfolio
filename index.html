@@ -21,29 +21,42 @@
        <li>
         <a href="#contact">Contact</a>
        </li>
-       <li>
-        <a href="#resume">Resume</a>
-       </li>
     </ul>
 </nav>
 </header>
 <main>
-    <section id="about-me">
+    <section class="about-me" id="about-me">
         <h2>About Me</h2>
         <img class="self-sketch" src="assets/images/portaitsketch.png" alt="Self sketch" />
         <p>I am a beginner web developer who is eager to show what I can do. I enjoy problem solving and displaying my creativity.</p>
     </section>
-    <section id="work">
+    <section class="work" id="work">
         <h2>Work</h2>
         <img class="pantry" src="assets/images/pantry.jpg" alt="shelf of food">
         <img class="calculator" src="assets/images/calculator.jpg" alt="calculator">
         <img class="taco" src="assets/images/taco.png" alt="hand holding a taco">
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
+    <h2>Contact</h2>
+    <section class="contact" id="contact">
+        <form>
+            <div class="contact-input">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="contact-input">
+                <input type="text" id="number" required>
+                <label for="number">Phone No.</label>
+            </div>
+            <div class="contact-input">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="contact-input">
+                <textarea id="message" rows="6"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
     </section>
 </main>   
 </body>
