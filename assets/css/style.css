@@ -3,6 +3,7 @@
    --nav-bar: rgb(22, 104, 167);
    --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    --text-color: white;
+   --section-font: 
 }
 
 body {
@@ -54,6 +55,10 @@ main {
     color: var(--text-color);
 }
 
+main h2 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
 .pantry {
     max-width: 100%;
     margin-bottom: 8px;
@@ -61,7 +66,6 @@ main {
 
 .calculator, .taco {
     max-width: 50%;
-    padding: 4px;
-    display: table-row;
+    margin: 8px;
 
 }
