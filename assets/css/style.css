@@ -15,7 +15,7 @@
 body {
     background:var(--light-blue);
 }
-
+/* nav bar properties*/
 header {
     padding: 20px;
     background: var(--nav-bar);
@@ -62,7 +62,6 @@ section {
 }
 
 .self-sketch {
-    float: right;
     max-height: 250px;
     max-width: 250px;
     display: inline;
@@ -76,20 +75,14 @@ main {
 h2 {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 50px;
+   text-decoration: underline 4px var(--text-color);
 }
 
-.pantry {
-    max-width: 80%;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
+.contact ul {
+    display: inline-block;
 }
 
-.calculator, .taco {
-    max-width: 40%;
-    margin: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+a:hover {
+    font-weight: bolder;
+    font-size: 125%;
 }
-
