@@ -15,7 +15,7 @@
 body {
     background:var(--light-blue);
 }
-/* nav bar properties*/
+/* Start nav bar properties*/
 header {
     padding: 20px;
     background: var(--nav-bar);
@@ -40,6 +40,7 @@ nav {
 a {
 color: var(--text-color);
 text-decoration: none;
+font-size: 30px;
 
 }
 
@@ -48,14 +49,18 @@ header ul li {
     margin-left: 45px;
 
 }
+/* End nav bar properties */
 
-.self-sketch {
+/* Self portrait sketch attributes */
+.self-sketch {  
     max-height: 250px;
     max-width: 250px;
     display: inline;
     padding:10px;
+    border-radius: 40px;
 }
 
+/* General body properties */
 section {
     width: 80%;
     background-color: var(--body-color);
@@ -73,12 +78,13 @@ main {
     color: var(--text-color);
 }
 
-h2 {
+h2 { /*Section title styles*/
    font-family: Arial, Helvetica, sans-serif;
    font-size: 50px;
    text-decoration: underline 4px var(--text-color);
 }
 
+/* Work section start */
 .work {
     display: grid;
     grid-template-columns: repeat(4);
@@ -93,7 +99,7 @@ h2 {
     padding: 10px;
 }
 
-.mock-up {
+.mock-up { 
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -129,16 +135,20 @@ h2 {
     border-radius: 0px 10px 0px 0px;
 }
 
+.work img:hover {
+    opacity: 0.75;
+}
+/* Work section end */
+
 .contact ul {
     display: inline-block;
     margin-left: 20px;
 }
 
-ul a:hover {
+a:hover { /* covers all clickable text */
     font-weight: bolder;
-    font-size: 125%;
+    color: rgb(237, 233, 155);
+    
 }
 
-.work img:hover {
-    opacity: 0.75;
-}
+
