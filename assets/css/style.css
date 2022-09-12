@@ -49,8 +49,15 @@ header ul li {
 
 }
 
+.self-sketch {
+    max-height: 250px;
+    max-width: 250px;
+    display: inline;
+    padding:10px;
+}
+
 section {
-    width: 70%;
+    width: 80%;
     background-color: var(--body-color);
     border-radius: 20px;
     background-position: center;
@@ -61,12 +68,6 @@ section {
     margin: 5px 15% 35px 15%
 }
 
-.self-sketch {
-    max-height: 250px;
-    max-width: 250px;
-    display: inline;
-    padding:10px;
-}
 
 main {
     color: var(--text-color);
@@ -78,11 +79,66 @@ h2 {
    text-decoration: underline 4px var(--text-color);
 }
 
-.contact ul {
-    display: inline-block;
+.work {
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(4);
+    grid-gap: 8px;
 }
 
-a:hover {
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.mock-up {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    text-align: center;
+}
+
+.study {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: relative;
+    text-align: center;
+}
+
+.calculator {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: relative;
+    text-align: center;
+}
+
+.work p {
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    background: var(--body-color);
+    padding:5px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.contact ul {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul a:hover {
     font-weight: bolder;
     font-size: 125%;
+}
+
+.work img:hover {
+    opacity: 0.75;
 }
